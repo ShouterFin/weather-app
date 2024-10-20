@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Link from "next/link" // Importataan Link-komponentti, jolla voidaan luoda navigointilinkkejä jotka eivät lataa kaikkea sisältöä uudelleen
+// import Link from "next/link" // Importataan Link-komponentti, jolla voidaan luoda navigointilinkkejä jotka eivät lataa kaikkea sisältöä uudelleen
 import ProductCard from "./components/ProductCard/ProductCard"
 import { Suspense } from "react";
 
