@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Container = () => {
+interface ContainerProps {
+  children: React.ReactNode
+}
+
+const Container = ({children}: ContainerProps) => {
   return (
-    <div className='container mx-auto p-10'>
-      <h1 className='text-4xl font-bold text-center'>Weather App</h1>
+    <div className='container mx-auto p-10 border'>
+      {children}
     </div>
   )
 }
