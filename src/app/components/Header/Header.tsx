@@ -3,16 +3,16 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-sky-100">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div tabIndex={0} role="button" className="btn btn-secondary btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="blue">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -22,7 +22,7 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-sky-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li><Link href="/users">Users</Link></li>
             <li><a>Portfolio</a></li>
             <li><a>About</a></li>
@@ -33,13 +33,13 @@ const Header = () => {
         <a className="btn btn-ghost text-3xl">Weather App</a>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-ghost btn-circle">
+        <button className="btn btn-secondary btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor">
+            stroke="blue">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
