@@ -1,18 +1,19 @@
 import Link from 'next/link'
 import React from 'react'
+import styles from './Header.module.css'
 
 const Header = () => {
   return (
-    <div className="navbar bg-sky-100">
+    <div className="header">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-secondary btn-circle">
+          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-9 w-9"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="blue">
+              stroke="currentColor">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -22,7 +23,7 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-sky-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            className="menu menu-lg dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li><Link href="/users">Users</Link></li>
             <li><a>Portfolio</a></li>
             <li><a>About</a></li>
@@ -30,16 +31,16 @@ const Header = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-3xl">Weather App</a>
+        <a className="header-button">Weather App</a>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-secondary btn-circle">
+        <button className="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-9 w-9"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="blue">
+            stroke="currentColor">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -47,11 +48,11 @@ const Header = () => {
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </button>
-        <button className="btn btn-ghost btn-circle">
+        {/* <button className="btn btn-ghost btn-circle">
           <div className="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-9 w-9"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor">
@@ -63,7 +64,7 @@ const Header = () => {
             </svg>
             <span className="badge badge-xs badge-primary indicator-item"></span>
           </div>
-        </button>
+        </button> */}
       </div>
     </div>
   )
